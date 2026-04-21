@@ -7,9 +7,9 @@ floating_modifier Mod1
 
 font pango:Google Sans Code Proportional 15
 
-exec_always --no-startup-id xrandr --output DP-0 --mode 1920x1080 --rate 240 --scale-from 1440x960
-exec_always --no-startup-id xrandr --output DP-1 --mode 1920x1080 --rate 240 --scale-from 1440x960
-exec_always --no-startup-id xrandr --output DP-2 --mode 1920x1080 --rate 240 --scale-from 1440x960
+exec_always --no-startup-id xrandr --output DP-0 --mode 1920x1080 --rate 240 --scale-from 1280x640
+exec_always --no-startup-id xrandr --output DP-1 --mode 1920x1080 --rate 240 --scale-from 1280x640
+exec_always --no-startup-id xrandr --output DP-2 --mode 1920x1080 --rate 240 --scale-from 1280x640
 exec_always --no-startup-id xrandr --output eDP-0 --off
 exec_always --no-startup-id xrandr --output eDP-1 --off
 exec_always --no-startup-id xrandr --output eDP-2 --off
@@ -22,9 +22,9 @@ set $refresh_i3status killall -SIGUSR1 i3status
 bindsym $mod+p exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym $mod+o exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 
-bindsym $mod+w exec --no-startup-id xrandr --output eDP-0 --mode 1440x960 --rate 60
-bindsym $mod+s exec --no-startup-id xrandr --output eDP-1 --mode 1440x960 --rate 60
-bindsym $mod+x exec --no-startup-id xrandr --output eDP-2 --mode 1440x960 --rate 60
+bindsym $mod+w exec --no-startup-id xrandr --output eDP-0 --mode 1280x720 --rate 60
+bindsym $mod+s exec --no-startup-id xrandr --output eDP-1 --mode 1280x720 --rate 60
+bindsym $mod+x exec --no-startup-id xrandr --output eDP-2 --mode 1280x720 --rate 60
 
 bindsym $mod+Return exec alacritty
 bindsym $mod+d exec "rofi -modi drun,run -show drun"
